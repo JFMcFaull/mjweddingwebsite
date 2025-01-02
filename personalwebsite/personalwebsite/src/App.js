@@ -1,14 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./compontents/navbar";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
+import Home from "./pages";
+import About from "./pages/about";
+import Blog from "./pages/blog";
+import Portfolio from "./pages/portfolio";
 
 function App() {
-  return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Jamie's Personal Website. 
-      </h1>
-    </div>
-  );
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
