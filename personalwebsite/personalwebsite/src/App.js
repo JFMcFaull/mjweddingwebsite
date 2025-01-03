@@ -21,7 +21,19 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/portfolio" element={<Portfolio />} />
             </Routes>
+            <div className="App">
+            <h1 className="gfg">GeeksforGeeks</h1>
+            <h2>How to use Google fonts in React JS</h2>
+
+            <div className="font-container">
+                <p className="text">
+                    This text is written in Monsterrat Font
+                    from Google Fonts{" "}
+                </p>
+            </div>
+        </div>
         </Router>
+        
     );
 }
 
