@@ -11,7 +11,7 @@ const About = () => {
             }}
         >
             <h1>
-                This is an about page, it's here and about. 
+                This is an about page, it's here and about.     
             </h1>
         </div>
     );

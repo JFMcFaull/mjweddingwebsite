@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./compontents/navbar";
 import {
     BrowserRouter as Router,
@@ -10,6 +11,7 @@ import Home from "./pages";
 import About from "./pages/about";
 import Blog from "./pages/blog";
 import Portfolio from "./pages/portfolio";
+import Posts from "./pages/posts/posts";
 
 function App() {
     return (
@@ -23,14 +25,12 @@ function App() {
             </Routes>
             <div className="App">
             <h1 className="gfg">GeeksforGeeks</h1>
-            <h2>How to use Google fonts in React JS</h2>
 
-            <div className="font-container">
-                <p className="text">
-                    This text is written in Monsterrat Font
-                    from Google Fonts{" "}
-                </p>
-            </div>
+            <div className="main-container" style={{backgroundColor: "aliceblue"}}>
+                    <Navbar />
+                    <Posts />
+                </div>
+            );
         </div>
         </Router>
         
