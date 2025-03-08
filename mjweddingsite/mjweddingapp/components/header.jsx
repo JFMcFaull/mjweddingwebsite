@@ -1,31 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import { useCountry } from '../context/CountryContext';
 import { Dropdown } from 'react-bootstrap';
 
 const Header = () => {
   const { changeCountry } = useCountry();
-  const [selectedCountry, setSelectedCountry] = useState('PL');
-
-  useEffect(() => {
-    const userLanguage = navigator.language || navigator.userLanguage;
-    if (userLanguage.includes('en')) {
-      setSelectedCountry('UK');
-      changeCountry('UK');
-    } else if (userLanguage.includes('pl')) {
-      setSelectedCountry('PL');
-      changeCountry('PL');
-    }
-  }, [changeCountry]);
+  const [selectedCountry, setSelectedCountry] = useState('PL');  
 
   const handleCountryChange = (countryCode) => {
     setSelectedCountry(countryCode);
-    changeCountry(countryCode);
+    changeCountry(countryCode);  
   };
 
   return (
     <header className="app-header">
-      <div className="headertext playfair-display">MARTA AND JAMIE</div> {/* Add this back */}
+      <div className="headertext playfair-display">MARTA AND JAMIE</div> 
 
       <Dropdown className="language-dropdown">
         <Dropdown.Toggle variant="secondary" id="dropdown-basic">

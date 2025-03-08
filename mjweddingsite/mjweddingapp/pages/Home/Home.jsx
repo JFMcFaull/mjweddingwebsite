@@ -5,16 +5,7 @@ import { useCountry } from '../../context/CountryContext';
 import { saveAs } from 'file-saver';
 
 const Home = () => {
-  const { selectedCountry, changeCountry } = useCountry();
-
-  useEffect(() => {
-    const userLanguage = navigator.language || navigator.userLanguage;
-    if (userLanguage.includes('en')) {
-      changeCountry('UK');
-    } else if (userLanguage.includes('pl')) {
-      changeCountry('PL');
-    }
-  }, [changeCountry]);
+  const { selectedCountry } = useCountry(); 
 
   const handleSaveEvent = () => {
     const startDate = new Date('2026-09-05T00:00:00Z');
