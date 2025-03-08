@@ -41,6 +41,7 @@
   font-family: 'Playfair Display', serif;
   text-align: center;
   margin-top: 0.1rem;
+  padding-bottom: 2rem;
 }
 
 .calendar-icon {
@@ -70,8 +71,8 @@
     margin-top: 0;
   }
   .calendar-icon {
-    color: #216b50;  /* Apply your green color */
-    font-size: 3vw;  /* Adjust the size of the icon */
+    color: #216b50;  
+    font-size: 3vw;  
   }
 }
 
@@ -89,7 +90,7 @@
     margin-top: 0;
   }
   .calendar-icon {
-    color: #216b50;  /* Apply your green color */
-    font-size: 4vw;  /* Adjust the size of the icon */
+    color: #216b50; 
+    font-size: 4vw;  
   }
 }

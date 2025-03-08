@@ -22,17 +22,17 @@ const Home = () => {
     const endDateFormatted = formatDate(endDate);
 
     const summary =
-      selectedCountry === 'UK'
+      selectedCountry === 'ENG'
         ? "Save the Date: Jamie and Marta's Wedding"
         : "Zarezerwuj datę: Ślub Marty i Jamie'ego";
 
     const description =
-      selectedCountry === 'UK'
+      selectedCountry === 'ENG'
         ? "We would love to have you there to celebrate with us."
         : "Chcielibyśmy, abyście byli z nami, by świętować ten dzień.";
 
     const location =
-      selectedCountry === 'UK'
+      selectedCountry === 'ENG'
         ? 'Poznan, Poland'
         : 'Poznań, Polska'; 
 
@@ -54,7 +54,7 @@ END:VCALENDAR`;
     const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
 
     const filename =
-      selectedCountry === 'UK'
+      selectedCountry === 'ENG'
         ? 'Save the Date - Jamie and Marta\'s Wedding.ics'
         : 'Zarezerwuj datę - Ślub Marty i Jamie\'ego.ics';
 
@@ -67,12 +67,12 @@ END:VCALENDAR`;
       <div className="hello-container">
         <div className="highlightable-group" onClick={handleSaveEvent}>
           <div className="savethedate-message great-vibes-regular">
-            {selectedCountry === 'UK' ? 'Save the Date' : 'Zarezerwuj datę'}
+            {selectedCountry === 'ENG' ? 'Save the Date' : 'Zarezerwuj datę'}
           </div>
           <span className="material-icons calendar-icon">calendar_today</span>
           <div className="date-message playfair-display">05-09-2026</div>
           <div className="location-message playfair-display">
-            {selectedCountry === 'UK' ? 'Poznań, Poland' : 'Poznań, Polska'}
+            {selectedCountry === 'ENG' ? 'Poznań, Poland' : 'Poznań, Polska'}
           </div>
         </div>
       </div>

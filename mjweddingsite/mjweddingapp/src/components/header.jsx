@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="app-header">
-      <div className="headertext playfair-display">MARTA AND JAMIE</div> 
+      <div className="headertext great-vibes-regular">Marta & Jamie</div> 
 
       <Dropdown className="language-dropdown">
         <Dropdown.Toggle variant="secondary" id="dropdown-basic">
@@ -23,7 +23,7 @@ const Header = () => {
 
         <Dropdown.Menu>
           <Dropdown.Item onClick={() => handleCountryChange('PL')}>PL</Dropdown.Item>
-          <Dropdown.Item onClick={() => handleCountryChange('UK')}>UK</Dropdown.Item>
+          <Dropdown.Item onClick={() => handleCountryChange('ENG')}>ENG</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </header>

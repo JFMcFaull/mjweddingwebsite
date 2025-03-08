@@ -11,9 +11,9 @@
 }
 
 .headertext {
-  font-size: 5vw;
+  font-size: 9vw;
   color: #216b50;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Great Vibes', cursive;
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -23,26 +23,31 @@
 
 @media (max-width: 768px) {
   .headertext {
-    font-size: 8vw;
-  }
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
 }
 
 @media (max-width: 480px) {
   .headertext {
-    font-size: 10vw;
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .language-dropdown .dropdown-toggle {
-  width: 60px;
-  height: 30px;
+  width: 4em;
+  height: 2em;
   background-color: white;
   color: #216b50;
-  border: 1px solid #216b50;
+  border: 0.5px solid #216b50;
   border-radius: 4px;
   font-size: 0.9rem;
   font-family: 'Playfair Display', serif;
-  padding: 0 1em 0 0.5em;
+    padding: 0 1em 0 0.5em;
   text-align: center;
   display: flex;
   justify-content: center;
