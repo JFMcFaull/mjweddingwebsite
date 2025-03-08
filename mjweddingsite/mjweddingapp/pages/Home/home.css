@@ -1,0 +1,95 @@
+.hello-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.highlightable-group {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0; 
+}
+
+.savethedate-message {
+  font-size: 7vw;
+  color: #216b50;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin: 0;
+  padding-top: 1rem;
+  line-height: 1;
+  display: inline-block;
+  padding-top: 0.3em;
+}
+
+.date-message {
+  font-size: 2vw;
+  color: #216b50;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.location-message {
+  font-size: 2vw;
+  color: #216b50;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.calendar-icon {
+  color: #216b50;
+  font-size: 1.75vw;
+  cursor: pointer;
+}
+
+.highlightable-group:hover .savethedate-message,
+.highlightable-group:hover .date-message,
+.highlightable-group:hover .location-message,
+.highlightable-group:hover .calendar-icon {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .savethedate-message {
+    font-size: 6vw;
+    margin-top: 0;
+  }
+  .date-message {
+    font-size: 2.5vw;
+    margin-top: 0;
+  }
+  .location-message {
+    font-size: 2.5vw;
+    margin-top: 0;
+  }
+  .calendar-icon {
+    color: #216b50;  /* Apply your green color */
+    font-size: 3vw;  /* Adjust the size of the icon */
+  }
+}
+
+@media (max-width: 480px) {
+  .savethedate-message {
+    font-size: 15vw;
+    margin-top: 0;
+  }
+  .date-message {
+    font-size: 5vw;
+    margin-top: 0;
+  }
+  .location-message {
+    font-size: 4vw;
+    margin-top: 0;
+  }
+  .calendar-icon {
+    color: #216b50;  /* Apply your green color */
+    font-size: 4vw;  /* Adjust the size of the icon */
+  }
+}
