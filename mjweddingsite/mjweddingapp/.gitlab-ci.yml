@@ -1,0 +1,16 @@
+image: node:14
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build  # Run the build script (replace this with your build command)
+    - mv build public  # This moves your build output into the folder GitLab Pages expects
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # Ensure you deploy from the main branch
