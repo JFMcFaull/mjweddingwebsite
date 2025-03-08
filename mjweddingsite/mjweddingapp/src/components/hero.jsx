@@ -4,8 +4,8 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="hero-container">
-      <img className="hero-image" src="./public/ourphoto.jpg" alt="Hero Image" />
-      </div>
+    <img className="hero-image" src="/mjweddingwebsite/ourphoto.jpg" alt="Hero Image" />
+    </div>
   );
 };
 

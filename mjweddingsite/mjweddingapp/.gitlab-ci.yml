@@ -2,24 +2,24 @@ stages:
   - build
   - deploy
 
-# The build job
+# Build step
 build:
   stage: build
-  image: node:16  # Use the official Node.js image
+  image: node:16
   script:
-    - npm ci    # Clean install dependencies
-    - npm run build  # Build the Vite app
+    - npm ci
+    - npm run build
   artifacts:
     paths:
-      - dist/    # Save the build artifacts in the `dist` folder
+      - dist/
 
-# The deploy job
-deploy:
+# Deploy to GitLab Pages
+pages:
   stage: deploy
-  image: busybox:1.35-uclibc  # A lightweight image for deploying
   script:
-    - apt-get update && apt-get install -y ssh
-    - echo "Deploying to server..."  # Your deployment command here
-    - rsync -avz dist/ user@your-server:/path/to/deployment/directory  # Example using rsync to deploy
+    - cp -r dist/* public/
+  artifacts:
+    paths:
+      - public
   only:
-    - main  # Deploy only when pushing to the `main` branch
+    - main
