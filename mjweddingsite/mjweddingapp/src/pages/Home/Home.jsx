@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Home.css';
+import './home.css';
 import Hero from '../../components/hero.jsx'
 import { useCountry } from '../../context/CountryContext';
 import { saveAs } from 'file-saver';
