@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.css';
 
-const ŸHero = () => {
+const Hero = () => {
   return (
     <div className="hero-container">
     <img className="hero-image" src="/mjweddingwebsite/ourphoto.jpg" alt="Hero Image" />
