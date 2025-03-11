@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CountryProvider } from './context/CountryContext';
-import Home from '../pages/Home/Home';
+import Home from './pages/Home/Home';
 import App from './App';  
 import Header from './components/header'
 

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import './Home.css';
-import Hero from '../../src/components/hero';
-import { useCountry } from '../../src/context/CountryContext';
+import Hero from '../../components/hero.jsx'
+import { useCountry } from '../../context/CountryContext';
 import { saveAs } from 'file-saver';
 
 const Home = () => {
-  const { selectedCountry } = useCountry(); // Getting selectedCountry from context
+  const { selectedCountry } = useCountry();
 
   const handleSaveEvent = () => {
     const startDate = new Date('2026-09-05T00:00:00Z');
